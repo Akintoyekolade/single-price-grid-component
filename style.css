@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'Karla';
+    src: url('fonts/Karla-VariableFont_wght.ttf') format('truetype');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla',sans-serif;
+    background-color: var(--light-grey);
+    margin: 32px;
+}
+
+:root {
+    --primary-cyan: hsl(179, 62%, 43%);
+    --secondary-yellow: hsl(71, 73%, 54%);
+    --grey-blue: hsl(218, 22%, 67%);
+    --light-grey: hsl(204, 43%, 93%);
+    --teal: hsl(183, 65%, 69%); 
+    --hover-yellow: hsl(71, 73%, 42%);
+    --light-cyan: hsl(179, 47%, 52%);
+    --turquiose-text: hsl(183, 65%, 80%)
+}
+
+.header-section {
+    background-color: white;
+    padding: 30px 22px;
+    border-radius: 8px 8px 0 0;
+}
+
+.header-section h1 {
+    color: var(--primary-cyan);
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.header-body-copy .yellow-text{
+    color: var(--secondary-yellow);
+    font-size: 16px;
+    letter-spacing: -0.3px;
+    margin-bottom: 18px;
+    line-height: 19px;
+}
+
+.header-body-copy .grey-blue-text {
+    color: var(--grey-blue);
+    font-size: 14px;
+    line-height: 26px;
+}
+
+/* Header Style Desktop */
+
+@media screen and (min-width: 830px) {
+    main {
+        display: grid;
+        justify-content: center;        
+    }
+
+    .content-container {
+        max-width: 633px;
+        display: grid;
+        justify-self: center;
+    }
+
+    .header-section {
+        background-color: white;
+        padding: 42px 36px;
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .header-section h1 {
+        color: var(--primary-cyan);
+        font-size: 22px;
+        margin-bottom: 24px;
+    }
+    
+    .header-body-copy .yellow-text{
+        color: var(--secondary-yellow);
+        font-size: 18px;
+        letter-spacing: -0.3px;
+        margin-bottom: 8px;
+        line-height: 19px;
+    }
+    
+    .header-body-copy .grey-blue-text {
+        color: var(--grey-blue);
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+
+}
+/* Header Style Desktop END */
+
+
+.subscription-card {
+    background-color: var(--primary-cyan);
+    padding: 24px 22px;
+}
+
+.subscription-card .light-grey-heading{ /*Monthly subscription*/
+    color: var(--light-grey);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    margin-bottom: 18px;
+}
+
+.subscription-price {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.subscription-price .heading-32-white {
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+    margin-right: 16px;
+}
+
+.subscription-price .teal-text{ 
+    color: var(--teal);
+    font-size: 16px;
+    letter-spacing: -0.3px;
+}
+
+.subscription-card .turquiose-text-paragraph { /* Full access...*/
+    font-size: 16px;
+    color: var(--turquiose-text);
+    letter-spacing: -0.3px;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+.button-green-background {
+    background-color: var(--secondary-yellow);
+    font-size: 16px;
+    color: var(--light-grey);
+    display: flex;
+    align-content: center;   
+    justify-content: center;
+    text-decoration: none;
+    padding:  16px 8px;
+    border-radius: 4px;
+    transition: ease-in-out 0.1s;
+    box-shadow: 0px 4px 12px rgba(55, 57, 61, 0.1);
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: var(--hover-yellow);    
+}
+
+/* Header Subscription section Desktop */
+
+@media screen and (min-width: 830px) {
+    .subscription-container-flex {
+        display: grid;   
+        grid-template-columns: repeat(2, 1fr)       
+        
+    }
+
+    .subscription-card {
+        background-color: var(--primary-cyan);
+        padding: 24px 36px;
+    }
+}
+
+
+/* Header Subscription section Desktop END*/
+
+/* Header Why Us section */
+
+.why-us-card {
+    background-color: var(--light-cyan);  
+}
+
+.why-us-card h2 {
+    color: var(--light-grey);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+.why-us-body .turquiose-text-paragraph {
+    font-size: 16px;
+    color: var(--turquiose-text);
+    letter-spacing: -0.3px;
+    font-weight: 400;
+}
+
