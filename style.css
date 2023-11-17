@@ -69,7 +69,7 @@ body {
 
     .header-section {
         background-color: white;
-        padding: 42px 36px;
+        padding: 42px 40px;
         border-radius: 8px 8px 0 0;
     }
     
@@ -142,6 +142,7 @@ body {
 .button-green-background {
     background-color: var(--secondary-yellow);
     font-size: 16px;
+    font-weight: 700;
     color: var(--light-grey);
     display: flex;
     align-content: center;   
@@ -151,11 +152,15 @@ body {
     border-radius: 4px;
     transition: ease-in-out 0.1s;
     box-shadow: 0px 4px 12px rgba(55, 57, 61, 0.1);
+    transition: transform 0.3s;
+    
 }
 
 .button:hover {
     cursor: pointer;
-    background-color: var(--hover-yellow);    
+    color: var(--light-grey); 
+    text-decoration: none;
+    transform: scale(1.1);
 }
 
 /* Header Subscription section Desktop */
@@ -169,7 +174,8 @@ body {
 
     .subscription-card {
         background-color: var(--primary-cyan);
-        padding: 24px 36px;
+        padding: 42px 40px;
+        border-radius: 0 0 0 8px;
     }
 }
 
@@ -179,7 +185,9 @@ body {
 /* Header Why Us section */
 
 .why-us-card {
-    background-color: var(--light-cyan);  
+    background-color: var(--light-cyan);
+    padding: 28px 22px; 
+    border-radius: 0 0 8px 8px; 
 }
 
 .why-us-card h2 {
@@ -187,12 +195,86 @@ body {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: -0.3px;
+    margin-bottom: 18px;
 }
 
 .why-us-body .turquiose-text-paragraph {
-    font-size: 16px;
+    font-size: 14px;
     color: var(--turquiose-text);
     letter-spacing: -0.3px;
     font-weight: 400;
+    margin-bottom: 4px;
 }
 
+/* Header Why Us section Desktop */
+
+@media screen and (min-width: 830px) {
+    .why-us-card {        
+        padding: 42px 40px;
+        border-radius: 0 0 8px 0; 
+    }
+
+
+}
+
+/*FOOTER*/
+
+footer {
+    width: 100%;           
+    display: grid; 
+    margin-top: 64px;   
+    justify-content: center; 
+}
+
+.attribution {
+    display: inline-flex;
+    justify-self: center;        
+}
+
+/* FOOTER Social Links */
+
+.social-links {
+    margin-bottom: 64px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.social-icon {    
+    color: var(--primary-cyan);    
+    border-radius: 24px;
+    transition: ease 0.3s;
+    margin-left: 16px;   
+    padding: 4px;     
+    display: inline-flex;
+    align-self: center;
+    justify-self: center; 
+    transform: scale(1.4);   
+    transition: transform 0.2s;
+}
+
+.social-icon:hover {
+    color: var(--hover-yellow);    
+    box-shadow: inset 0 0 0 1px rgba(55, 57, 61, 0.1);    
+    transform: scale(1.8); 
+}
+
+.icon-1{
+    margin-left: 0;
+}
+
+footer a {
+    color:  var(--primary-cyan);
+    text-decoration: none;
+    transition: ease 0.3s;
+}
+
+a:hover {    
+    color: var(--hover-yellow);
+}
+
+.attribution .div-line {
+    padding: 0px 8px;
+}
